@@ -1,4 +1,4 @@
-# **Task Description: First Stage of the Interview Process**Senior React developer
+# **Task Description: First Stage of the Interview Process** Senior React developer
 
 # 1. **Application Setup:**
 - Develop an application that supports both Google and Microsoft authentication.
