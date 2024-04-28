@@ -1,13 +1,12 @@
-import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../context/auth";
+import { useUserAuth } from "../../context/auth";
 import { signOut } from "firebase/auth";
 import { auth } from "../../firebase/firebaseConfig";
 import { useNavigate } from "react-router-dom";
 import Profile from "../../components/Profile/Profile";
 
 function HomePage() {
-  const { user } = useContext(AuthContext);
+  const { user } = useUserAuth();
   const navigate = useNavigate();
 
   const signOutFromApp = () =>

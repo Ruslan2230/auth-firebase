@@ -1,6 +1,6 @@
 import "./sign-in-sign-up.styles.css";
-import { useState, useEffect, useContext } from "react";
-import { AuthContext } from "../../context/auth";
+import { useState, useEffect } from "react";
+import { useUserAuth } from "../../context/auth";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -29,7 +29,7 @@ const SignInSignUpPage = () => {
   const microsoftProvider = new OAuthProvider("microsoft.com");
   const googleProvider = new GoogleAuthProvider();
 
-  const { user } = useContext(AuthContext);
+  const { user } = useUserAuth();
 
   const navigate = useNavigate();
 
