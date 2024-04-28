@@ -1,3 +1,19 @@
+# **Task Description: First Stage of the Interview Process**Senior React developer
+
+# 1. **Application Setup:**
+- Develop an application that supports both Google and Microsoft authentication.
+- Include a standard registration system that allows users to register using just a username and password, without the need for mobile or email confirmations.
+
+# 2. **Authentication and Authorization:**
+- Users should be able to log in using their Google account or manually registered credentials.
+- Upon successful login, users should be redirected to the home page displaying the message, "This is the home page."
+- Ensure that if the user was logged in prior to restarting the application, they should automatically be redirected to the home page, not the login page.
+
+# 3. **Pages and Navigation:**
+- Create an "Orders" page that displays "This is the order page."
+- If a user attempts to access the Orders page without being authenticated, they should be redirected to the login page.
+- Implement best practices for routing and authentication flow within the application.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
